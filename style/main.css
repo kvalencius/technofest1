@@ -41,7 +41,7 @@ html {
   display: flex;
   justify-content: center; 
   align-items: center;  
-}
+} 
 
 .sub_title {
   font-family: "Digitalt", sans-serif;
@@ -89,7 +89,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: -80px;
   color: #ffdb0a;
   font-size: 128px;
   font-style: normal;
@@ -99,16 +99,17 @@ button {
   stroke-linejoin: bevel;
 }
 
-.button_img_back {
-  margin: 0;
+.back {
+  margin-bottom: 60px;
   padding: 0;
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
   font-family: "Digitalt", sans-serif;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
   
   width: 80%;
   /* height: auto; */
@@ -116,7 +117,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   color: #ffdb0a;
   font-size: 40px;
   font-style: normal;
@@ -180,6 +181,7 @@ button {
   width: 40%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 0;
@@ -196,18 +198,27 @@ button {
   align-items: flex-start;
   color: white;
   font-size: 30px;
-  font-weight: bold; /* ganti dari font-style: bold ke font-weight */
-  opacity: 0.5; /* ganti 50% jadi format CSS valid */
-  margin-bottom: 0px; /* tambahkan ini untuk atur jarak ke bawah */
+  font-weight: bold; 
+  opacity: 0.5; 
+  margin-top: -150px;
+  margin-bottom: -50px; 
 }
 
-.result{
-  /* height: 100%; */
+.paragraph_page5 {
+  font-family: "Digitalt", sans-serif;
+  letter-spacing: 2.5px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  color: white;
+  font-size: 30px;
+  font-weight: bold; 
+  opacity: 0.5; 
+  margin-top: 40px;
+  margin-bottom: -30px; 
 }
+
+
 
 .answer_tof {
     position: absolute;
@@ -216,6 +227,8 @@ button {
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
+    margin-top: -30px;
+    margin-bottom: 20px;
 }
 
 .tag {
@@ -241,22 +254,52 @@ button {
   display: inline-block;
   background-image: url('../images/tag.svg');
   background-repeat: no-repeat;
-  background-size: contain; /* Keep aspect ratio */
+  background-size: contain; 
   background-position: center;
 
-  padding: 0.4em 1.5em; /* Tweak this for spacing inside the ribbon */
+  padding: 0.4em 1.5em; 
   white-space: nowrap;
   text-align: center;
 
-  /* These help control size */
   line-height: 1;
+}
+
+.tag_result {
+  display: inline-block;
+  background-image: url('../images/tag.svg');
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center;
+
+  padding: 0.4em 1.5em; 
+  white-space: nowrap;
+  text-align: center;
+
+  line-height: 1;
+
+  font-family: "Digitalt", sans-serif;
+  letter-spacing: 2.5px;
+  
+  /* height: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  font-size: 30px;
+  font-style: bold;
+  opacity: 100%;
+
+  -webkit-text-stroke: 2px #098AEE;
+  text-shadow: 0px 4px #098AEE;
 }
 
 .shape-container {
   width: 500px;
   height: 300px;
   background-color: white;
-  margin: 0 auto 30px;
+  margin-bottom: 40px;
   border-radius: 30px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
   position: relative; /* Ini penting untuk absolute di dalamnya */
@@ -264,4 +307,114 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.shape-container2 {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  margin-top: -20px;
+  margin-bottom: -140px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+  position: relative; /* Ini penting untuk absolute di dalamnya */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question_in_container{
+  font-family: digitalt;
+  color: #B57BFE;
+  font-size: 20px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+
+.paragraph_page6{
+  font-family: "Digitalt", sans-serif;
+  letter-spacing: 2.5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-size: 30px;
+  font-weight: bold; /* ganti dari font-style: bold ke font-weight */
+  opacity: 0.5; /* ganti 50% jadi format CSS valid */
+  margin-top: -60px;
+  margin-bottom: -10px;
+}
+
+.red_tag_result {
+  display: inline-block;
+  background-image: url('../images/red-tag-no-text.svg');
+  background-repeat: no-repeat;
+  background-size: contain; /* Keep aspect ratio */
+  background-position: center;
+
+  padding: 0em 3em; /* Tweak this for spacing inside the ribbon */
+  white-space: nowrap;
+  text-align: center;
+
+  /* These help control size */
+  line-height: 1;
+}
+
+.red_tag_result {
+  font-family: "Digitalt", sans-serif;
+  letter-spacing: 2.5px;  
+  
+  /* height: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  font-size: 60px;
+  font-style: bold;
+  opacity: 100%;
+
+  -webkit-text-stroke: 2px #ED0F29;
+  text-shadow: 0px 4px #ED0F29;
+}
+
+.shape-container3 {
+  width: 650px;
+  height: 300px;
+  background-color: white;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+  position: relative; /* Ini penting untuk absolute di dalamnya */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.shape-container3-text{
+  font-family: digitalt;
+  color: #B57BFE;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.shape-container3-image {
+  margin-left: 10px;
+}
+
+.back_page5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
