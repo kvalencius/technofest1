@@ -40,7 +40,7 @@ html {
 
   display: flex;
   justify-content: center; 
-  align-items: center;
+  align-items: center;  
 }
 
 .sub_title {
@@ -67,7 +67,6 @@ html {
   padding: 0;
   display: flex;
   flex-direction: column;
-
 }
 
 button {
@@ -192,22 +191,14 @@ button {
 .paragraph_page4 {
   font-family: "Digitalt", sans-serif;
   letter-spacing: 2.5px;
-  
-  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   color: white;
   font-size: 30px;
-  font-style: bold;
-  opacity: 50%;
-}
-
-.tag {
-  /* height: 100%; */
-  display: flex;
-  justify-content: center; 
-  align-items: flex-start;
+  font-weight: bold; /* ganti dari font-style: bold ke font-weight */
+  opacity: 0.5; /* ganti 50% jadi format CSS valid */
+  margin-bottom: 0px; /* tambahkan ini untuk atur jarak ke bawah */
 }
 
 .result{
@@ -219,8 +210,58 @@ button {
 }
 
 .answer_tof {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.tag {
+  font-family: "Digitalt", sans-serif;
+  letter-spacing: 2.5px;
+  
+  /* height: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-} 
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  font-size: 30px;
+  font-style: bold;
+  opacity: 100%;
+
+  -webkit-text-stroke: 2px #098AEE;
+  text-shadow: 0px 4px #098AEE;
+}
+
+.tag {
+  display: inline-block;
+  background-image: url('../images/tag.svg');
+  background-repeat: no-repeat;
+  background-size: contain; /* Keep aspect ratio */
+  background-position: center;
+
+  padding: 0.4em 1.5em; /* Tweak this for spacing inside the ribbon */
+  white-space: nowrap;
+  text-align: center;
+
+  /* These help control size */
+  line-height: 1;
+}
+
+.shape-container {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  margin: 0 auto 30px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+  position: relative; /* Ini penting untuk absolute di dalamnya */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
